@@ -1,0 +1,37 @@
+[
+    {
+        "model": "GreenThumb.naturalgasbudget",
+        "pk": 1,
+        "fields": {
+            "budget": "$<50k"
+        }
+    },
+    {
+        "model": "GreenThumb.naturalgasbudget",
+        "pk": 2,
+        "fields": {
+            "budget": "$50k-$100k"
+        }
+    },
+    {
+        "model": "GreenThumb.naturalgasbudget",
+        "pk": 3,
+        "fields": {
+            "budget": "$100k-$250k"
+        }
+    },
+    {
+        "model": "GreenThumb.naturalgasbudget",
+        "pk": 4,
+        "fields": {
+            "budget": "$250k+"
+        }
+    },
+    {
+        "model": "GreenThumb.naturalgasbudget",
+        "pk": 4,
+        "fields": {
+            "budget": "Not Applicable"
+        }
+    }
+]

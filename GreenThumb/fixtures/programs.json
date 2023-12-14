@@ -1,0 +1,126 @@
+[
+    {
+        "model": "GreenThumb.program",
+        "pk": 1,
+        "fields": {
+            "program_name":"Small Business Program",
+            "link": "https://saveonenergy.ca/en/For-Your-Small-Business/Programs-and-Incentives/Small-Business-Program",
+            "supporting_docs":[
+                { "Participant agreement (PDF) ": "https://saveonenergy.ca/-/media/Files/SaveOnEnergy/small-business/2021-2024-SBP-Participant-Agreement.ashx" },
+                { "Eligible Measures List (xlsx) ": "https://saveonenergy.ca/-/media/Files/SaveOnEnergy/small-business/SBP-Eligible-Measures-List.ashx" },
+                {"Program brochure (pdf)": "https://saveonenergy.ca/-/media/Files/SaveOnEnergy/small-business/SBP-program-brochure.ashx"}
+                    ],
+            "description": "The Save on Energy Small Business program is designed to help small businesses across Ontario make equipment improvements to reduce their energy consumption, at no cost. Leveraging the success of the former Small Business Lighting program, this new and improved program offers small businesses direct-install incentives on an expanded range of equipment – both lighting and non-lighting."
+        }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 2,
+        "fields": {
+            "program_name": "Retrofit Program",
+            "link": "https://saveonenergy.ca/en/For-Business-and-Industry/Programs-and-incentives/Retrofit-Program/Retrofit-Program-Update",
+
+            "supporting_docs": [
+            { "Retrofit Digital User guide":"https://saveonenergy.ca/-/media/Files/SaveOnEnergy/Industry/Retrofit-Documents/Retrofit-Digital-User-Guide-Applicants.ashx" }
+            ],
+            "description": "The Save on Energy Retrofit program offers businesses incentives to upgrade equipment, reduce energy bills, lower carbon footprints and enhance staff comfort. The program offers financial incentives through two streams.",
+             "eligible_employee_count": [1,2]
+        }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 3,
+        "fields": {
+            "program_name": "Existing Building Commissioning program",
+            "link": "https://saveonenergy.ca/For-Business-and-Industry/Programs-and-incentives/Existing-Building-Commissioning-Program",
+            "supporting_docs": [{"EBC Program Requirements":"https://saveonenergy.ca/-/media/Files/SaveOnEnergy/Industry/EBCx/EBCx-Program-Requirements.ashx"}],
+            "description": "The EBCx program offers financial incentives to commercial building owners to hire qualified commissioning providers to undertake building recommissioning at their facilities, helping them realize energy savings from improved facility operations and maintenance (O&M) business practices.",
+            "eligible_annual_electricity_budget": [2,3,4]
+        }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 4,
+        "fields": {
+            "program_name": "Strategic Energy Management program",
+            "link": "https://saveonenergy.ca/For-Business-and-Industry/Programs-and-incentives/Strategic-Energy-Management-Program",
+            "supporting_docs": [{"SEM Program requirements":"https://saveonenergy.ca/-/media/Files/SaveOnEnergy/Industry/SEM-Documents/SEM-Program-Requirements.ashx"}],
+            "description": "The program offers organizations a two-year cohort-based learning model to small groups of professionals across Ontario. This cohort-based approach is designed to create a strong focus on learning through shared experiences with other participants, and on developing a continuous performance improvement mindset. In addition, participants will be eligible for financial incentives for energy savings and for purchasing management tools. The three components of the program are set out below.",
+            "eligible_annual_electricity_budget": [4]
+        }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 5,
+        "fields": {
+            "program_name": "Industrial Energy Efficiency Program",
+            "link": "https://saveonenergy.ca/For-Business-and-Industry/Programs-and-incentives/Industrial-Energy-Efficiency-Program",
+            "supporting_docs": [{"IEEP Program requirements":"https://saveonenergy.ca/-/media/Files/SaveOnEnergy/Industry/IEEP/IEEP-Program-Requirements.ashx"}],
+            "description": "The program offers organizations up to $5 million in financial incentives for each large, complex industrial energy-efficiency project accepted into the program. Eligible projects will deliver electricity savings using proven commercial technologies to lower energy consumption and reduce electricity bills."
+
+        }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 6,
+        "fields": {
+            "program_name": "Energy Performance Program",
+            "link":"https://saveonenergy.ca/For-Business-and-Industry/Programs-and-incentives/Energy-Performance-Program",
+            "supporting_docs": [{"EPP Program requirements":"https://saveonenergy.ca/-/media/Files/SaveOnEnergy/Industry/EPP/EPP-Program-Requirements.ashx"}],
+            "description": "The program is based on a pay-for-performance model that encourages whole building energy performance improvements, as well as peak demand reduction. Participants have choice and flexibility in implementing capital and non-capital energy-efficiency measures, and are rewarded for energy savings and peak demand savings at the same incentive rate regardless of the types of projects/activities that have been implemented."
+
+
+        }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 7,
+        "fields": {
+            "program_name": "Local Initiatives",
+            "link": "https://saveonenergy.ca/For-Business-and-Industry/Programs-and-incentives/Local-Initiatives",
+            "supporting_docs": "Please reach out to website for more  information",
+            "description": "The purpose of these adders is to encourage further uptake in the Retrofit program to assist in reducing demand for the transmission assets in these constrained areas. The target areas were selected in consultation with the IESO’s system planners and include regions that have been identified as electricity-constrained through the regional planning process."
+                 }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 8,
+        "fields": {
+            "program_name": "Fixed Incentive Program",
+            "link": "https://www.enbridgegas.com/business-industrial/incentives-conservation/programs-and-incentives/equipment-upgrades/fixed-incentive-program",
+            "supporting_docs": "Please reach out to website for more  information",
+            "description": "Whether you’re replacing end-of-life equipment or planning to buy new, the Fixed Incentive Program makes it easy to offset the cost of upgrading to energy-efficient natural gas technology."
+                 }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 9,
+        "fields": {
+            "program_name": "Effordable housing multi residential program",
+            "link": "https://www.enbridgegas.com/business-industrial/incentives-conservation/programs-and-incentives/retrofits-custom-projects/affordable-multi-family-housing-program",
+            "supporting_docs": "Please Visit website for more  information",
+            "description": "Keep heat in while moving stale air out with heat-recovery ventilators (HRV) and energy-recovery ventilators (ERV). ERVs and HRVs transfer heat and moisture between the building’s exhaust air and the outside supply air. "
+                 }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 10,
+        "fields": {
+            "program_name": "Multi unit residential in-suite fixed incentive program",
+            "link": "https://www.enbridgegas.com/business-industrial/incentives-conservation/programs-and-incentives/equipment-upgrades/multi-unit-res-in-suite-fixed-incentive",
+            "supporting_docs": "Please Visit website for more  information",
+            "description": "Keep heat in while moving stale air out with heat-recovery ventilators (HRV) and energy-recovery ventilators (ERV). ERVs and HRVs transfer heat and moisture between the building’s exhaust air and the outside supply air."
+                 }
+    },
+    {
+        "model": "GreenThumb.program",
+        "pk": 11,
+        "fields": {
+            "program_name": "Retro fit and custom projects",
+            "link": "https://www.enbridgegas.com/business-industrial/incentives-conservation/programs-and-incentives/retrofits-custom-projects",
+            "supporting_docs": "Please reach out to website for more  information",
+            "description": "Saving energy is good for business. Investing in retrofits that make your building or facility more energy efficient can reduce operating costs, improve profitability, create a more comfortable environment and reduce greenhouse gas (GHG) emissions."
+                 }
+    }
+
+]

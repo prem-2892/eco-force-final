@@ -1,0 +1,37 @@
+[
+    {
+        "model": "GreenThumb.employeecount",
+        "pk": 1,
+        "fields": {
+            "count": "<20"
+        }
+    },
+    {
+        "model": "GreenThumb.employeecount",
+        "pk": 2,
+        "fields": {
+            "count": "20-49"
+        }
+    },
+    {
+        "model": "GreenThumb.employeecount",
+        "pk": 3,
+        "fields": {
+            "count": "50-249"
+        }
+    },
+    {
+        "model": "GreenThumb.employeecount",
+        "pk": 4,
+        "fields": {
+            "count": "250+"
+        }
+    },
+    {
+        "model": "GreenThumb.employeecount",
+        "pk": 4,
+        "fields": {
+            "count": "Not Applicable"
+        }
+    }
+]

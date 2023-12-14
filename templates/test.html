@@ -1,0 +1,915 @@
+[12:49 am] Ramya Chowdary Puvvada
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>GreenThumb</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap">
+
+<link rel="icon" href="logo.png" type="image/png">
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+
+      tailwind.config = {
+
+        theme: {
+
+          extend: {
+
+            colors: {
+
+              clifford: '#da373d',
+
+            },
+
+          },
+
+        },
+
+      }
+
+</script>
+
+<style>
+
+     label {
+
+            font-family: 'Dancing Script', cursive;
+
+         color: #ffffff;
+
+         font-size: 1.2rem;
+
+        }
+ 
+     body {
+ 
+        margin: 0;
+
+        font-family: 'Poppins', sans-serif;
+
+    }
+ 
+    header {
+
+         /* Light green header background color */
+
+        padding: 1rem;
+
+        text-align: center;
+
+        width: 100%;
+
+    }
+ 
+    header img {
+
+        width: 80px; /* Adjust the logo width as needed */
+
+        height: auto;
+
+    }
+ 
+{#    h1, h2 {#}
+
+{#    font-family: 'Black Bones', sans-serif;#}
+ 
+ 
+/* Additional styling for h1 and h2 if needed */
+
+    h1 {
+
+        font-size: 2rem;
+
+       color: #EDFDED;
+
+        text-align: center;
+
+        margin-bottom: 1rem;
+
+        font-weight: 600;
+
+        padding-top: 60px;
+
+        margin-bottom: -20px;
+
+        font-family: 'Dancing Script', cursive;
+
+    }
+ 
+    h2 {
+
+        font-size: 1.2rem;
+
+        color: #EDFDED;
+
+        text-align: center;
+
+        font-family: 'Dancing Script', cursive;
+ 
+    }
+ 
+    .form-main {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0.25rem;
+
+        margin: 0.25rem;
+
+        font-family: 'Dancing Script', cursive;
+
+    }
+ 
+    .form-main input, .form-main select {
+
+        padding: 0.5rem;
+
+        font-family: 'Dancing Script', cursive;
+
+        border-radius: 0.375rem;
+
+        border: 1px solid #55B76B; /* Light green border color */
+
+        font-size: 1rem;
+
+        line-height: 1.5rem;
+
+        margin-bottom: 0.5rem;
+
+    }
+ 
+    .form-main .cta {
+
+        background-color: #55B76B; /* Light green button background color */
+
+        color: #55B76B; /* White button text color */
+
+        padding: 0.5rem;
+
+        font-size: 1.125rem;
+
+        font-family: 'Dancing Script', cursive;
+
+        line-height: 1.75rem;
+
+        border: none;
+
+        cursor: pointer;
+
+        margin-top: 1rem;
+
+        width: 160px;
+
+        align-self: center;
+
+    }
+ 
+    .flex-container {
+
+        display: flex;
+
+        border-radius: 0.5rem;
+
+        overflow: hidden;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+
+        padding: 2rem;
+
+    }
+ 
+    .right-panel {
+
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the transparency as needed */
+
+    padding: 1rem;
+
+    margin-top: 1rem;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+
+    backdrop-filter: blur(30px); /* Adjust the blur strength as needed */
+
+}
+ 
+    .table-container {
+
+        margin-top: 1rem;
+
+    }
+ 
+    table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin-top: 1rem;
+
+    }
+ 
+    th, td {
+
+        padding: 0.75rem;
+
+        text-align: left;
+
+        border-bottom: 1px solid #55B76B; /* Light green border color */
+
+    }
+ 
+    td {
+
+        color: #ffffff;
+
+    }
+ 
+    th {
+
+        background-color: #f0fff4;
+
+        color: #ffffff; /* Light green background color */
+
+    }
+ 
+    tr:hover {
+
+        background-color: rgba(255, 255, 255, 0.1);
+
+    }
+ 
+    .matched-programs {
+
+    {#background-color: rgba(255, 255, 255, 0.1);#}
+
+    padding: 1rem;
+
+    margin-top: 1rem;
+
+    border-radius: 0.5rem;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    width: 100%;
+
+    backdrop-filter: blur(10px);
+
+    }
+ 
+    .matched-programs h2 {
+
+        font-size: 1.5rem;
+
+        color: #55B76B; /* Light green text color */
+
+        margin-bottom: 1rem;
+
+        font-weight: 600;
+
+    }
+ 
+    .matched-table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin-top: 1rem;
+
+    }
+ 
+    .matched-table th, .matched-table td {
+
+        padding: 0.75rem;
+
+        text-align: left;
+
+        border-bottom: 1px solid #55B76B; /* Light green border color */
+
+    }
+ 
+    .matched-table th {
+
+        background-color: rgba(255, 255, 255, 0.3); /* Light green background color */
+
+    }
+ 
+    .matched-table tr:hover {
+
+        background-color: rgba(255, 255, 255, 0.1); /* Light green hover background color */
+
+    }
+ 
+    .privacy-link {
+
+        color: #3498db; /* Blue text color */
+
+        text-decoration: underline;
+
+        cursor: pointer;
+
+    }
+ 
+    .faq-section {
+
+    {#background-color: rgba(255, 255, 255, 0.2); /* Adjust the transparency as needed */ font-family: 'Dancing Script', cursive;#}
+
+    padding: 1rem;
+
+    margin-top: 1rem;
+
+    border-radius: 0.5rem;
+
+    font-weight: 400;
+
+    border-radius: 8px;
+
+    {#box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);#}
+
+    width: 100%;
+
+        font-family: 'Dancing Script', cursive;
+
+    backdrop-filter: blur(5px); /* Adjust the blur strength as needed */
+
+}
+ 
+    .faq-section h2 {
+
+        font-size: 1.5rem;
+
+        color: #55B76B; /* Light green text color */
+
+        font-family: 'Dancing Script', cursive;
+
+        margin-bottom: 1rem;
+
+        font-family: 'Dancing Script', cursive;
+
+    }
+ 
+    .accordion {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+ 
+    .accordion-item {
+
+        border: 1px solid #55B76B;
+
+        border-radius: 8px;
+
+        margin-bottom: 0.5rem;
+
+        position: relative;
+
+        box-shadow: 0 8px 16px rgba(85, 183, 107, 0.25); /* Slightly more defined shadow for both question and answer */
+
+    }
+ 
+    .accordion-item label {
+
+        display: block;
+
+        padding: 1rem;
+
+        cursor: pointer;
+
+        font-size: 1.25rem;
+
+        color: #ffffff; /* Subtitle text color */
+
+        position: relative;
+
+    }
+ 
+    .accordion-item input {
+
+        display: none;
+
+    }
+ 
+    /* Add the dropdown arrow */
+
+    .accordion-item label::after {
+
+        content: '\25BC'; /* Unicode character for a down-pointing triangle */
+
+        font-size: 0.75rem;
+
+        color: #ffffff; /* Light green color */
+
+        position: absolute;
+
+        right: 1rem;
+
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        transition: transform 0.3s ease-in-out;
+
+    }
+ 
+    /* Rotate the arrow when the accordion is open */
+
+    .accordion-item input:checked + label::after {
+
+        transform: translateY(-50%) rotate(180deg);
+
+    }
+ 
+    .accordion-content {
+
+        padding: 0.75rem;
+
+        display: none;
+
+        color: #ffffff;
+
+    }
+ 
+    .accordion-item input:checked + label + .accordion-content {
+
+        display: block;
+
+    }
+ 
+    .overlay {
+
+    background: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+
+    background-size: cover;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.9);
+ 
+    .matched-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 1rem;
+
+    }
+ 
+    .matched-buttons button {
+
+    background-color: #55B76B; /* Light green button background color */
+
+    color: #fff; /* White button text color */
+
+    padding: 0.5rem 1rem;
+
+    font-size: 1rem;
+
+    line-height: 1.5rem;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 0.375rem;
+
+    }
+ 
+    .matched-buttons button:hover {
+
+      background-color: #4aae5e; /* Darker shade on hover */
+
+    }
+
+    .matched-buttons button + button {
+
+      margin-left: 1rem;
+
+    }
+ 
+    .absolute-white label{
+
+      color: #fff !important;
+
+    }
+ 
+    .input-container p{
+
+        display: flex;
+
+        width: fit-content;
+
+        flex-direction: column;
+
+    }
+ 
+    .input-container input, .input-container select{
+
+        padding: 0.5em;
+
+        border-radius: 0.25em;
+
+    }
+ 
+ 
+    .footer-container {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            background-color: rgba(255, 255, 255, 0.2);
+
+            padding: 1rem;
+
+            margin-top: 1rem;
+
+            border-radius: 0.5rem;
+
+            bottom: 0;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+            width: 100%;
+
+            backdrop-filter: blur(10px);
+
+            height: 80px;
+
+        }
+ 
+        .footer-logo img {
+
+            width: 80px;
+
+        }
+ 
+        .footer-links {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center; /* Center-align content horizontally */
+
+}
+ 
+.footer-link {
+
+    /* color: #3498db; */
+
+    color: #fff;
+
+    text-decoration: underline;
+
+    cursor: pointer;/* Adjust the spacing between links */
+
+}
+ 
+.copyright-text {
+
+    color: #ffffff;
+
+}
+ 
+        .social-icons {
+
+            display: flex;
+
+            align-items: center;
+
+            margin-top: 40px;
+
+        }
+ 
+        .social-icon img {
+
+            width: 25px;
+
+        }}
+
+</style>
+
+<!-- Add this style at the beginning of the head section -->
+
+<style>
+
+    .feedback-section {
+
+        display: none;
+
+        position: fixed;
+
+        top: 50%;
+
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: rgba(255, 255, 255, 0.9);
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        z-index: 1000;
+
+    }
+ 
+    .overlay:target + .feedback-section {
+
+        display: block;
+
+    }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1 style="font-size: 80px; font-weight: 600;"><span style="color: #f0fff4; padding: 0 5px;">GreenThumb</span></h1>
+
+<div style="display: flex; align-items: center;">
+
+        <h2 style="font-size: 25px; margin-bottom: -10px; margin-top: 1rem;">A product of          </h2>
+
+        <img src="https://e2fsystems.com/hs-fs/hubfs/Logo%201920%20x%20800%20White%20NO%20BG.png?width=517&height=215&name=Logo%201920%20x%20800%20White%20NO%20BG.png" alt="E2F Systems Logo" style="margin-right: 70px; height: 50px;">
+
+    </div>
+
+<div class="flex-container">
+
+<div class="right-panel">
+
+<div class="form-container">
+
+<form method="post" action="{% url 'index' %}" class='w-fit mx-auto'>
+
+                    {% csrf_token %}
+
+                    {{ formset.management_form }}
+
+<div class='grid grid-cols-1 sm:grid-cols-2 sm:gap-2 lg:grid-cols-3 md:gap-4 input-container w-fit mx-auto'>
+
+                        {% for form in formset %}
+
+                            {{ form.as_p }}
+
+                        {% endfor %}
+
+</div>
+
+<div class='flex items-center mt-4 gap-2'>
+
+<input type='checkbox' class='p-4 checked:bg-blue-500'>
+
+<label class='text-gray mb-0'>By Clicking this checkbox you consent to be contacted by us and agree to Terms and Condition</label>
+
+</div>
+
+<input type="submit" value="Submit" class='bg-blue-500 p-2 mt-3 rounded-md text-lg font-medium text-white cursor-pointer'>
+
+</form>
+
+</div>
+
+</div>
+
+          {% if suitable_programs %}
+
+<div class="matched-programs">
+
+<h2 style="color: #f0fff4;">Funding Programs</h2>
+
+<table class="matched-table">
+
+<thead>
+
+<tr>
+
+<th>Program Name</th>
+
+<th>Supporting Docs</th>
+
+<th>Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for program in suitable_programs %}
+
+<tr>
+
+<td style="min-width: 200px;">
+
+  <a href="{{ program.link }}" target="_blank" style="color: #55B76B; text-decoration: underline;">
+
+    {{ program.program_name }}
+
+  </a>
+
+</td>
+ 
+<td>
+
+                    {% for doc in program.supporting_docs %}
+
+                        {% for doc_name, doc_link in doc.items %}
+
+                            <p><a href="{{ doc_link }}" target="_blank">{{ doc_name }}</a></p>
+
+                        {% endfor %}
+
+                    {% endfor %}
+
+                </td>
+
+<td>{{ program.description }}</td>
+
+</tr>
+
+                    {% endfor %}
+
+</tbody>
+
+</table>
+
+<div class="matched-buttons">
+
+        <a href="{% url 'all_programs' %}"View All>
+
+        <button class="cta" style="margin-right: 10px;">View All</button></a>
+
+        <a href="{% url 'as_pdf' %}" download>
+
+            <button class="cta" style="margin-left: 10px;">Download PDF</button></a>
+
+            </div>
+ 
+        </div>
+
+        {% endif %}
+
+</div>
+ 
+<a href="#feedback-popup">Give Feedback</a>
+ 
+        <div class="faq-section">
+
+<h2 style="color: #f0fff4;">Frequently Asked Questions</h2>
+ 
+                <div class="accordion">
+
+<div class="accordion-item">
+
+<input type="checkbox" id="faq1">
+
+<label for="faq1">What is GreenThumb?</label>
+
+<div class="accordion-content">
+
+                            GreenThumb is a platform that helps you save money on your energy projects by providing information about suitable programs and resources.
+
+</div>
+
+</div>
+ 
+                    <div class="accordion-item">
+
+<input type="checkbox" id="faq2">
+
+<label for="faq2">How can I submit my details?</label>
+
+<div class="accordion-content">
+
+                            You can submit your details by filling out the form above and clicking the "Submit" button.
+
+</div>
+
+</div>
+ 
+                    <div class="accordion-item">
+
+<input type="checkbox" id="faq3">
+
+<label for="faq3">Is my information safe?</label>
+
+<div class="accordion-content">
+
+                            All the data collection is in accordance with our privacy policy. We only use your data to match you with relevant funding opportunities, and you can rest assured that your data is secure.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="feedback-popup" class="overlay"></div>
+
+<div class="feedback-section">
+
+    <h2 style="color: #f0fff4;">Feedback</h2>
+
+    <form action="{% url 'feedback' %}">
+
+        {% csrf_token %}
+
+        {{ aform.as_p }}
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+    <a href="#" onclick="history.back();">Close</a>
+
+</div>
+ 
+ 
+<footer class="footer-container">
+
+<div class="footer-logo">
+
+<!-- Add your E2F Systems logo here -->
+ 
+            </div>
+ 
+            <div class="footer-links" style="margin-top: 10px;">
+
+<a href="https://e2fsystems.com/" target="_blank" rel="noopener noreferrer"><img src="https://e2fsystems.com/hs-fs/hubfs/Logo%201920%20x%20800%20White%20NO%20BG.png?width=517&height=215&name=Logo%201920%20x%20800%20White%20NO%20BG.png" alt="E2F Systems Logo" style= "margin-right: 60px; height: 35px;"></a>
+
+<!-- Add your middle content here -->
+
+<a href="https://www.linkedin.com/company/e2fsystems/" target="_blank" rel="noopener noreferrer" class="social-icon" style="margin-right: 60px;"><img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/white-linkedin-logo.png" alt="LinkedIn"></a>
+
+<a href="https://e2fsystems.com/privacy" target="_blank" rel="noopener noreferrer" class="footer-link" style="margin-right: 60px; height: 20px;">Privacy Policy</a>
+
+<p class="copyright-text">Copyright © 2023 E2F Systems All Rights Reserved</p>
+
+</div>
+ 
+            <div class="social-icons">
+
+<!-- Add your social media icons with links here -->
+ 
+            </div>
+
+</footer>
+ 
+      </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

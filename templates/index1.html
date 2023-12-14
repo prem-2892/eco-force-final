@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Green Thumb <span style="color: #00C853;">👍</span></h1>
+
+    <div class="form-container">
+        <form method="post"  action="{% url 'index' %}">
+            {% csrf_token %}
+            {{ formset.management_form }}
+
+            {% for form in formset %}
+                {{ form.as_p }}
+            {% endfor %}
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="program-results">
+
+        <a href="{% url 'as_pdf'  %}" download>
+            <button>Download PDF</button>
+        </a>
+
+        <h2>Suitable Programs</h2>
+
+        <table>
+            <tr>
+                <th>Program Name</th>
+                <th>Link</th>
+                <th>Project Type</th>
+                <th>Supporting Docs</th>
+                <th>Description</th>
+            </tr>
+            {% for program in suitable_programs %}
+                <tr>
+                    <td>{{ program.program_name }}</td>
+                    <td><a href="{{ program.link }}" target="_blank">{{ program.program_name }}</a></td>
+                    <td>{{ program.project_type }}</td>
+                    <td>{{ program.supporting_docs }}</td>
+                    <td>{{ program.description }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

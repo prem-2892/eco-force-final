@@ -1,0 +1,55 @@
+body {
+    background-image: url('https://as1.ftcdn.net/v2/jpg/02/86/65/42/1000_F_286654214_7YgoCnRUJJEvalcK52kdQGsKP3EypjHn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-field {
+    flex: 1;
+}
+
+input[type="submit"] {
+    background-color: #FBC02D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD740;
+}
+
+.product-of-e2f {
+    font-family: 'Black Bones', sans-serif;
+    /* Additional styling for the product-of-e2f class if needed */
+}
+Copy code
+h1, h2, .product-of-e2f {
+    font-size: 2rem;
+    color: #000000; /* Black text color */
+    /* Additional styling properties */
+}

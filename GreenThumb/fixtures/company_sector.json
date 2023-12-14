@@ -1,0 +1,199 @@
+[
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 1,
+        "fields": {
+            "name": "Advanced Manufacturing"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 2,
+        "fields": {
+            "name": "Agriculture"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 3,
+        "fields": {
+            "name": "Biotech/Laboratories"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 4,
+        "fields": {
+            "name": "Colleges/Universities"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 5,
+        "fields": {
+            "name": "Commercial real estate"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 6,
+        "fields": {
+            "name": "dairy"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 6,
+        "fields": {
+            "name": "Data center"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 7,
+        "fields": {
+            "name": "Electrifiaction"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 8,
+        "fields": {
+            "name": "Food Processing"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 9,
+        "fields": {
+            "name": "Government"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 10,
+        "fields": {
+            "name": "Green Houses"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 11,
+        "fields": {
+            "name": "Grocery"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 12,
+        "fields": {
+            "name": "Health Care"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 13,
+        "fields": {
+            "name": "Hospitality"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 14,
+        "fields": {
+            "name": "K-12 Schools"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 15,
+        "fields": {
+            "name": "Livestock"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 16,
+        "fields": {
+            "name": "New construction"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 17,
+        "fields": {
+            "name": "Parking garage/lots"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 18,
+        "fields": {
+            "name": "Public assembly"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 19,
+        "fields": {
+            "name": "Restaurant"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 20,
+        "fields": {
+            "name": "Residential"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 21,
+        "fields": {
+            "name": "Retail"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 22,
+        "fields": {
+            "name": "Senior living"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 23,
+        "fields": {
+            "name": "Warehouses and cold storages"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 24,
+        "fields": {
+            "name": "Water distribution or wastewater treatment"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 25,
+        "fields": {
+            "name": "Service retail"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 26,
+        "fields": {
+            "name": "Small/Medium sized business"
+        }
+    },
+    {
+        "model": "GreenThumb.Companysector",
+        "pk": 27,
+        "fields": {
+            "name": "Other"
+        }
+    }
+
+]
